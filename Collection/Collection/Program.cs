@@ -3,7 +3,7 @@
 
 CollectionOperations co = new CollectionOperations();
 
-Dictionary<string, int> keyValuePairs = new Dictionary<string, int>();
-keyValuePairs.Add("hello", 6);
+Stack<DateTime> stack = new Stack<DateTime>();
+stack.Push(DateTime.MaxValue);
 
-co.DictionaryOperations(keyValuePairs);
+co.StackOperations(stack);

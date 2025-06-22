@@ -43,13 +43,28 @@ namespace Collection
                 if (dictionary.ContainsKey("scuba") && dictionary["scuba"] == 6)
                 {
                     dictionary.Add("dive", 6);
+
                 }
+
             }
+
         }
 
         public void StackOperations(Stack<DateTime> stack)
         {
+            if (stack != null && stack.Count > 0) 
+            {
+                DateTime today = DateTime.Now;
+                if(stack.First() < today)
+                {
+                    stack.Pop();
+                    stack.Push(today);
+
+                }
+
+            }
 
         }
+
     }
 }
